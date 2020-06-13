@@ -135,7 +135,7 @@ history = model.fit_generator(train_generator,
                               verbose=1,
                               validation_data=validation_generator)
                               
- PLOT LOSS AND ACCURACY
+#PLOT LOSS AND ACCURACY
 %matplotlib inline
 
 import matplotlib.image  as mpimg
