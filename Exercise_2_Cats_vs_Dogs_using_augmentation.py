@@ -8,6 +8,10 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from shutil import copyfile
 from os import getcwd
 
+#!wget --no-check-certificate \
+#    "https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_3367a.zip" \
+#    -O "/tmp/cats-and-dogs.zip"
+
 path_cats_and_dogs = f"{getcwd()}/../tmp2/cats-and-dogs.zip"
 shutil.rmtree('/tmp')
 
