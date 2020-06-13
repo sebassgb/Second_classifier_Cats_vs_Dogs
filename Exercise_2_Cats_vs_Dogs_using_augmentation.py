@@ -118,6 +118,13 @@ train_datagen = ImageDataGenerator( rescale = 1.0/255. )
 train_generator = train_datagen.flow_from_directory(TRAINING_DIR,
                                                     batch_size=10,
                                                     class_mode='binary',
+                                                    rotation_range=40,
+                                                    width_shift_range=0.2,
+                                                    height_shift_range=0.2,
+                                                    shear_range=0.2,
+                                                    zoom_range=0.2,
+                                                    horizontal_flip=True,
+                                                    fill_mode='nearest',
                                                     target_size=(300, 300))
 VALIDATION_DIR = "/tmp/cats-v-dogs/testing/"
 validation_datagen = ImageDataGenerator( rescale = 1.0/255. )
